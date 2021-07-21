@@ -9,6 +9,9 @@ function shuffleClass(students, numToMove) {
     if (numToMove === 0) {
         return students;
     }
+    if (!students.length) {
+        return false;
+    }
     let finalArray = [];
     const length = students.length;
     students.forEach((student, index) => {
@@ -26,3 +29,4 @@ function shuffleClass(students, numToMove) {
 // To test
 console.log(shuffleClass([7, 8, 0], 1));
 console.log(shuffleClass([1, 2, 3, 4, 5, 6, 7], 3));
+console.log(shuffleClass([], 9));
