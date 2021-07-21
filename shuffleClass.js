@@ -1,6 +1,8 @@
 "use strict";
 /**
  * Shifts the position of the numbers in the students array by the positive value of numToMove
+ * @param { number[] } students Array to be shuffled
+ * @param { number } numToMove Number of moves
 */
 function shuffleClass(students, numToMove) {
     numToMove = Math.abs(numToMove);
