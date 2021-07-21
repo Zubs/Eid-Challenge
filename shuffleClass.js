@@ -1,5 +1,9 @@
 "use strict";
+/**
+ * Shifts the position of the numbers in the students array by the positive value of numToMove
+*/
 function shuffleClass(students, numToMove) {
+    numToMove = Math.abs(numToMove);
     if (numToMove === 0) {
         return students;
     }
@@ -17,5 +21,6 @@ function shuffleClass(students, numToMove) {
     });
     return finalArray;
 }
+// To test
 console.log(shuffleClass([7, 8, 0], 1));
 console.log(shuffleClass([1, 2, 3, 4, 5, 6, 7], 3));
